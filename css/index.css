@@ -170,8 +170,17 @@ header {
   margin-right: 18%;
   padding-bottom: 1%;
 }
+@media (max-width: 500px) {
+  header {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
 header h1 {
   font-size: xx-large;
+  color: #454A59;
 }
 header .navbar {
   margin-top: 1%;
@@ -180,6 +189,11 @@ header .navbar {
   flex-direction: row;
   justify-items: center;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header .navbar {
+    width: 40%;
+  }
 }
 header .navbar .navlink {
   text-decoration: none;
@@ -195,6 +209,23 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    font-size: xx-small;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .mainheader {
+    width: 500px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -206,6 +237,17 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    justify-content: center;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -214,6 +256,12 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -228,6 +276,14 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 0%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -236,6 +292,36 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  display: flex;
+  justify-content: center;
+  margin-left: 33%;
+  margin-right: 33%;
+  padding: 2%;
+  border-radius: 6%;
+}
+.home .walk .walk-text .btn .sign {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 147%;
+    margin: 0;
+    padding: 6%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
