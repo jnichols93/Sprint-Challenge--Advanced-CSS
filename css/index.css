@@ -183,6 +183,8 @@ header h1 {
   color: #454A59;
 }
 header .navbar {
+  position: fixed;
+  top: 0;
   margin-top: 1%;
   width: 21%;
   display: flex;
@@ -305,6 +307,9 @@ footer {
   margin-right: 33%;
   padding: 2%;
   border-radius: 6%;
+}
+.home .walk .walk-text .btn:hover {
+  background: #5E6164;
 }
 .home .walk .walk-text .btn .sign {
   text-decoration: none;
