@@ -199,6 +199,9 @@ header .navbar .navlink {
   text-decoration: none;
   color: #454A59;
 }
+header .navbar .navlink .navlink :hover {
+  color: white;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -216,9 +219,10 @@ footer {
 }
 @media (max-width: 500px) {
   .home {
-    max-width: 500px;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    max-width: 500px;
   }
 }
 @media (max-width: 500px) {
