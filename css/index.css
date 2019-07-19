@@ -176,6 +176,7 @@ header {
     display: flex;
     flex-direction: column;
     margin: 0;
+    width: 101%;
   }
 }
 header h1 {
@@ -185,8 +186,11 @@ header h1 {
 header .navbar {
   position: fixed;
   top: 0;
+  background: none;
+  width: 41%;
+  color: #23293B;
   margin-top: 1%;
-  width: 21%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -194,12 +198,19 @@ header .navbar {
 }
 @media (max-width: 500px) {
   header .navbar {
-    width: 40%;
+    width: 90%;
+    margin-left: 8%;
   }
 }
 header .navbar .navlink {
   text-decoration: none;
-  color: #454A59;
+  color: #23293B;
+  width: 9%;
+}
+@media (max-width: 500px) {
+  header .navbar .navlink {
+    width: 20%;
+  }
 }
 header .navbar .navlink .navlink :hover {
   color: white;
@@ -318,9 +329,11 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 147%;
+    width: 140%;
+    border: 1px solid black;
+    border-radius: 8px;
     margin: 0;
-    padding: 6%;
+    padding: 7%;
     padding-left: 0;
   }
 }
