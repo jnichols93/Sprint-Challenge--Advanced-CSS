@@ -225,6 +225,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+footer p {
+  font-size: 0.9rem;
+}
 @media (max-width: 500px) {
   footer {
     font-size: xx-small;
